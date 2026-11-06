@@ -6,7 +6,7 @@ package model;
  * @author Alexandre Costa Araujo
  */
 public class Pessoa {
-    String nome;
+    private String nome;
 
     public Pessoa(String nome) {
         this.nome = nome;

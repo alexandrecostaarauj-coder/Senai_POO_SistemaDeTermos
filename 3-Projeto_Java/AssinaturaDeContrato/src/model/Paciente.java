@@ -8,17 +8,17 @@ import java.time.LocalDate;
  */
 public class Paciente extends Pessoa implements Identificavel {
 
-    int ID;
-    EstadoCivil estadoCivil;
-    String profissao;
-    String cpf;
-    String rg;
-    LocalDate dataDeNascimento;
-    Endereco endereco;
-    String email;
-    String telefone;
-    double altura;
-    double peso;
+    private int ID;
+    private EstadoCivil estadoCivil;
+    private String profissao;
+    private String cpf;
+    private String rg;
+    private LocalDate dataDeNascimento;
+    private Endereco endereco;
+    private String email;
+    private String telefone;
+    private double altura;
+    private double peso;
 
     public Paciente(int ID, EstadoCivil estadoCivil, String profissao, String cpf, String rg, LocalDate dataDeNascimento, Endereco endereco, String email, String telefone, double altura, double peso, String nome) {
         super(nome);

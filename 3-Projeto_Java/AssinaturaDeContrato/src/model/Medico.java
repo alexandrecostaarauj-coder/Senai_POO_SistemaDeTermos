@@ -6,9 +6,9 @@ package model;
  * @author Alexandre Costa Araujo
  */
 public class Medico extends Pessoa implements Identificavel {
-    int ID;
-    Integer crm;
-    Integer rqe;
+    private int ID;
+    private Integer crm;
+    private Integer rqe;
 
     public Medico(int ID, Integer crm, Integer rqe, String nome) {
         super(nome);

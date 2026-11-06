@@ -8,10 +8,10 @@ package model;
  */
 public class ContatoDeEmergencia {
 
-    String nome;
-    String parentesco;
-    String telefone;
-    String email;
+    private String nome;
+    private String parentesco;
+    private String telefone;
+    private String email;
 
     public ContatoDeEmergencia(String nome, String parentesco, String telefone) {
         this(nome, parentesco, telefone, null);

@@ -16,16 +16,16 @@ public class Contrato implements Identificavel {
 
     public static final int MAXIMO_CONTATOS = 2;
 
-    int ID;
-    Paciente paciente;
-    Medico medico;
-    String procedimento;
-    LocalDate dataDoProcedimento;
-    LocalDate dataDaAssinatura;
-    ModoAssinatura modoAssinatura;
-    List<ContatoDeEmergencia> contatosDeEmergencia;
-    OpcaoDeImagem opcaoDeImagem;
-    DeclaracaoDeSaude declaracaoDeSaude;
+    private int ID;
+    private Paciente paciente;
+    private Medico medico;
+    private String procedimento;
+    private LocalDate dataDoProcedimento;
+    private LocalDate dataDaAssinatura;
+    private ModoAssinatura modoAssinatura;
+    private List<ContatoDeEmergencia> contatosDeEmergencia;
+    private OpcaoDeImagem opcaoDeImagem;
+    private DeclaracaoDeSaude declaracaoDeSaude;
 
     public Contrato(int ID, Paciente paciente, Medico medico, String procedimento, LocalDate dataDoProcedimento,
             LocalDate dataDaAssinatura, ModoAssinatura modoAssinatura, List<ContatoDeEmergencia> contatosDeEmergencia,

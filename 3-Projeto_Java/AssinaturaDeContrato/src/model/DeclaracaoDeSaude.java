@@ -8,13 +8,13 @@ package model;
  * @author Alexandre Costa Araujo
  */
 public class DeclaracaoDeSaude {
-    boolean fumante;
-    boolean dependenteQuimico;
-    boolean cardiopata;
-    boolean suspeitaDeGravidez;
-    boolean diabetico;
-    boolean sedentario;
-    boolean hipertenso;
+    private boolean fumante;
+    private boolean dependenteQuimico;
+    private boolean cardiopata;
+    private boolean suspeitaDeGravidez;
+    private boolean diabetico;
+    private boolean sedentario;
+    private boolean hipertenso;
 
     public DeclaracaoDeSaude(boolean fumante, boolean dependenteQuimico, boolean cardiopata, boolean suspeitaDeGravidez, boolean diabetico, boolean sedentario, boolean hipertenso) {
         this.fumante = fumante;

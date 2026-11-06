@@ -6,13 +6,13 @@ package model;
  * @author Alexandre Costa Araujo
  */
 public class Endereco {
-    String rua;
-    String numero;
-    String setor;
-    String cep;
-    String cidade;
-    String estado;
-    String complemento; 
+    private String rua;
+    private String numero;
+    private String setor;
+    private String cep;
+    private String cidade;
+    private String estado;
+    private String complemento; 
 
     public Endereco(String rua, String numero, String setor, String cep, String cidade, String estado) {
         this(rua, numero, null, setor, cep, cidade, estado);
