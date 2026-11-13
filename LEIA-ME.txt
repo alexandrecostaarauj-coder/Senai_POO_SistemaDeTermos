@@ -1,0 +1,28 @@
+SISTEMA DE TERMOS DE INTERNAÇÃO - ENTREGA FINAL
+
+CONTEÚDO DO ZIP
+1-Documento_de_Requisitos/  Tema, problema, objetivo, escopo, RF, RNF e arquitetura MVC + DTO
+2-Diagrama_UML/             Diagrama de classes em PDF e PNG (3 páginas: Model, Persistência
+                            e Documentos, Controller/DTO/Visão) e o arquivo editável .drawio
+3-Codigo_Fonte/             Projeto NetBeans completo (AssinaturaDeContrato)
+4-Testes/                   Relatório de testes e saída dos 29 cenários (todos aprovados)
+
+COMO EXECUTAR
+1. No NetBeans, abrir o projeto 3-Codigo_Fonte/AssinaturaDeContrato (Java 25).
+2. Clean and Build e depois Run (classe principal: visao.TelaInicial).
+   As bibliotecas (Apache POI e PDFBox) já estão em lib/terceiros.
+3. Para gerar o PDF do termo é preciso ter o LibreOffice ou o Microsoft Word instalado.
+4. Testes: botão direito em src/teste/TesteDados.java > Run File.
+
+ORGANIZAÇÃO DO CÓDIGO (MVC + DTO)
+visao       telas Swing; só usam controller e DTO
+dto         só transportam os dados entre a tela e o controller
+controller  convertem DTO <-> model e chamam o DAO e a geração de documentos
+model       entidades e TODAS as regras do sistema (validação nos setters e em Contrato.validar)
+persistencia DAOs em CSV (interface Persistivel e classe abstrata ArquivoCsvDAO)
+documento   geração do termo em Word e PDF
+util        Conversor (texto <-> tipos) e CpfUtil (dígitos do CPF)
+
+DADOS
+src/dados/medicos.csv e src/dados/contratos.csv têm apenas dados fictícios de exemplo
+(2 médicos e 3 termos). Texto UTF-8, uma linha por registro, colunas separadas por ";".

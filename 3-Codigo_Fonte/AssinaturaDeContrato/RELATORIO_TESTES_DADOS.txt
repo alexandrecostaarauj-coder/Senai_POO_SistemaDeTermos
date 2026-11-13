@@ -1,0 +1,31 @@
+PASSOU  T01 IDs sequenciais (1 e 2) e pasta criada
+PASSOU  T02 persistência após reiniciar (paciente, endereço com complemento, médico, datas)
+PASSOU  T03 CPF inválido rejeitado e nada gravado
+PASSOU  T04 só obrigatórios (nome, médico, data, modo); vazios voltam null
+PASSOU  T05 atualizar (corrigir nome)
+PASSOU  T06 excluir e novo ID = maior+1
+PASSOU  T07 médico sem nome rejeitado
+PASSOU  T08 arquivo inexistente -> lista vazia
+PASSOU  T09 linha com colunas faltando -> IOException (sem lista parcial)
+PASSOU  T10 ';' no nome rejeitado
+PASSOU  T11 MANUAL: contatos, declaração e imagem em branco
+PASSOU  T12 data 31/02/2026 rejeitada
+PASSOU  T13 sem data do procedimento rejeitado
+PASSOU  T14 DIGITAL completo: 2 contatos (com e-mail), declaração e imagem voltam iguais
+PASSOU  T15 DIGITAL sem contato de emergência rejeitado
+PASSOU  T16 DIGITAL sem declaração de saúde rejeitado
+PASSOU  T17 3 contatos rejeitado (máximo 2)
+PASSOU  T18 contato sem telefone rejeitado
+PASSOU  T19 contrato sem modo de assinatura rejeitado
+PASSOU  T20 limite de 20: ao salvar o 21º e o 22º, apaga os 2 mais antigos
+PASSOU  T21 trava: com todas as cirurgias por vir, nenhum termo é apagado
+PASSOU  T22 o termo mais antigo de cirurgia futura (remarcada) é mantido; apaga o próximo que já passou
+PASSOU  T23 busca por CPF traz o termo mais recente do paciente (e null se não achar)
+PASSOU  T24 excluir o médico do cadastro não afeta o termo (cópia guardada)
+PASSOU  T25 CRM repetido rejeitado (mas atualizar o próprio médico funciona)
+PASSOU  T26 Word gerado: nenhum {{marcador}} sobrando, dados do paciente, médico e contato no texto
+PASSOU  T27 MANUAL: contatos e SIM/NÃO em branco, imagem sem X
+PASSOU  T28 apagar os arquivos do termo (usado ao excluir e no limite de 20)
+PASSOU  T29 data sugerida: sexta -> segunda; quarta -> quinta
+
+Resumo: 29 passou, 0 falhou.
